@@ -30,7 +30,8 @@ class Plugin extends PluginBase
      */
     public function register()
     {
-
+        $this->registerConsoleCommand('waka.nestedmodel', 'Waka\Scaffold\Console\CreateNestedModel');
+        $this->registerConsoleCommand('waka.injector', 'Waka\Scaffold\Console\CreateInjector');
     }
 
     /**
